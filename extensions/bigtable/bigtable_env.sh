@@ -17,6 +17,9 @@
 # and configured to use Cloud Bigtable.
 # Usage: ./bdutil deploy -e extensions/bigtable/bigtable_env.sh.
 
+# We require Hadoop 2.
+import_env hadoop2_env.sh
+
 # Directory on each VM in which to install hbase.
 HBASE_INSTALL_DIR=/home/hadoop/hbase-install
 HBASE_CONF_DIR=${HBASE_INSTALL_DIR}/conf/
